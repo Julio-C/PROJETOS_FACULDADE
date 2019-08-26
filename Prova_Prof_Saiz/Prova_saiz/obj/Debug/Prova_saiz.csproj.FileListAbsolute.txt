@@ -1,0 +1,9 @@
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\bin\Debug\Prova_saiz.exe.config
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\bin\Debug\Prova_saiz.exe
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\bin\Debug\Prova_saiz.pdb
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.csprojResolveAssemblyReference.cache
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.Form1.resources
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.Properties.Resources.resources
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.csproj.GenerateResource.Cache
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.exe
+c:\users\lab\documents\visual studio 2013\Projects\Prova_saiz\Prova_saiz\obj\Debug\Prova_saiz.pdb
