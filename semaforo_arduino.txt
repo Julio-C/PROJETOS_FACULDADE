@@ -1,0 +1,109 @@
+int verm1 = 0;
+int amar1 = 1;
+int verd1 = 2;
+
+int verm2 = 3;
+int amar2 = 4;
+int verd2 = 5;
+
+int verm3 = 6;
+int amar3 = 7;
+int verd3 = 8;
+
+int verm4 = 9;
+int amar4 = 10;
+int verd4 = 11;
+
+int pverm = 12;
+int pverd = 13;
+
+void setup() {
+pinMode(verm1,OUTPUT);
+pinMode(amar1,OUTPUT);
+pinMode(verd1,OUTPUT);
+pinMode(verm2,OUTPUT);
+pinMode(amar2,OUTPUT);
+pinMode(verd2,OUTPUT);
+pinMode(verm3,OUTPUT);
+pinMode(amar3,OUTPUT);
+pinMode(verd3,OUTPUT);
+pinMode(verm4,OUTPUT);
+pinMode(amar4,OUTPUT);
+pinMode(verd4,OUTPUT);
+pinMode(pverm,OUTPUT);
+pinMode(pverd,OUTPUT);
+ }
+
+void loop() {
+
+  digitalWrite(pverm, HIGH);
+  digitalWrite(verm1, HIGH);
+  digitalWrite(verm2, HIGH);
+  digitalWrite(verm3, HIGH);
+  digitalWrite(verd4, HIGH);
+  delay(5000);
+
+  digitalWrite(verd4, LOW);
+  delay(0);
+
+  digitalWrite(amar4, HIGH);
+  delay(2000);
+
+  digitalWrite(verm3, LOW);
+  digitalWrite(amar4, LOW);
+  delay(0);
+
+  digitalWrite(verm4, HIGH);
+  digitalWrite(verd3, HIGH);
+  delay(5000);
+
+  digitalWrite(verd3, LOW);
+  delay(0);
+  
+  digitalWrite(amar3, HIGH);
+  delay(2000);
+
+  digitalWrite(verm2, LOW);
+  digitalWrite(amar3, LOW);
+  delay(0);
+
+  digitalWrite(verm3, HIGH);
+  digitalWrite(verd2, HIGH);
+  delay(5000);
+
+  digitalWrite(verd2, LOW);
+  delay(0);
+
+  digitalWrite(amar2,HIGH);
+  delay(2000);
+
+  digitalWrite(amar2, LOW);
+  digitalWrite(verm1, LOW);
+  delay(0);
+
+  digitalWrite(verm2, HIGH);
+  digitalWrite(verd1, HIGH);
+  delay(5000);
+
+  digitalWrite(verd1, LOW);
+  delay(0);
+
+  digitalWrite(amar1, HIGH);
+  delay(2000);
+
+  digitalWrite(pverm, LOW);
+  digitalWrite(amar1, LOW);
+  delay(0);
+
+  digitalWrite(verm1, HIGH);
+  digitalWrite(pverd, HIGH);
+  delay(6000);
+
+  digitalWrite(pverd, LOW);
+  digitalWrite(verm1, LOW);
+  digitalWrite(verm2, LOW);
+  digitalWrite(verm3, LOW);
+  digitalWrite(verm4, LOW);
+  delay(0);
+ 
+  }

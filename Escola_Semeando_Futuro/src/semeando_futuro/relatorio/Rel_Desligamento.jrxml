@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rel_Desligamento" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1540d3ad-8db1-434e-9712-8f18d75fc1c3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="idDesligamento" class="java.lang.String"/>
+	<field name="RA" class="java.lang.String"/>
+	<field name="Data_Desl" class="java.lang.String"/>
+	<field name="Motivo" class="java.lang.String"/>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="8eb9b8ec-075c-4c9f-a1e9-805106d2ce4f"/>
+				<staticText>
+					<reportElement x="20" y="20" width="339" height="43" forecolor="#FFFFFF" uuid="705c1968-7882-4968-b91c-618eed85cf43"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Semeando o Futuro]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="dd3fe830-9aa1-459a-a93e-e031c13f9716"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Rel. de Desligamentos]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="c65f185a-f19f-4737-bd09-9cd727a64538"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="20" uuid="29cebb3e-6c21-44ea-b3fb-63451a68ab02"/>
+				<text><![CDATA[idDesligamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="110" height="20" uuid="bd1af90d-d79f-4f4d-a613-80965ede20b0"/>
+				<text><![CDATA[RA do aluno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="0" width="166" height="20" uuid="da2ec7e0-87e5-43ee-b772-ea6d8a45fb1c"/>
+				<text><![CDATA[Data Desligamento (Ano/Mês/Dia)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="138" height="20" uuid="32e50baf-0797-4e8a-8ec0-d3431b745a7f"/>
+				<text><![CDATA[Motivo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="09f8c964-8407-4998-bbb8-463d27b983e4"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="8c45b153-4c40-4224-89f5-abefef0a0afc"/>
+				<textFieldExpression><![CDATA[$F{idDesligamento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="110" height="20" uuid="8d651408-cc75-4099-8d8c-3dd8f1cd8169"/>
+				<textFieldExpression><![CDATA[$F{RA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="166" height="20" uuid="0bd77dd7-614c-4c73-911a-9aabb200052d"/>
+				<textFieldExpression><![CDATA[$F{Data_Desl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="ba312a30-9c05-43e0-91bb-33478953b0b4"/>
+				<textFieldExpression><![CDATA[$F{Motivo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="9f075073-ede8-4be6-8bf4-7ac407005420"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="eefd17ac-aa24-436c-92d2-e061ff51a3aa"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="bee57b9c-f66c-47fd-a07f-e25173d42829"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

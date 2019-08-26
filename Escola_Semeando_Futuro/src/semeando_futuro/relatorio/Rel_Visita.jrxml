@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rel_Visita" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dc34a334-205f-4067-a8f1-df3f5e1a4ac2">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="idVisita" class="java.lang.String"/>
+	<field name="Nome_Mae" class="java.lang.String"/>
+	<field name="Nome_Pai" class="java.lang.String"/>
+	<field name="Nome_Filho" class="java.lang.String"/>
+	<field name="Fone" class="java.lang.String"/>
+	<field name="Celular" class="java.lang.String"/>
+	<field name="Email" class="java.lang.String"/>
+	<field name="Data_Visita" class="java.lang.String"/>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="844" height="92" backcolor="#006699" uuid="d228f819-0897-4c9c-ab4d-09d93e143440"/>
+				<staticText>
+					<reportElement x="20" y="20" width="343" height="43" forecolor="#FFFFFF" uuid="190277da-66eb-405b-b06b-02313d59f735"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Semeando o Futuro]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="642" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="db2842f2-498a-40d4-8fee-d05e2f2c6f0a"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Rel. de Visitas]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="844" height="1" forecolor="#666666" uuid="101ac23e-0602-4473-ba0d-249296f37ac1"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="1d078a25-ddc5-4c2d-a62e-058ce39f4c41"/>
+				<text><![CDATA[idVisita]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="2347177c-06c3-4373-b6bb-88956029e8cc"/>
+				<text><![CDATA[Nome Mãe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="7eba4a3c-21ed-4d11-b928-67d6a280d142"/>
+				<text><![CDATA[Nome Pai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="c506e9a2-31f2-4abb-8f07-6c9173e4c3cc"/>
+				<text><![CDATA[Nome Filho(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="76259502-a2fd-444f-9c44-65ba20e406b1"/>
+				<text><![CDATA[Telefone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="3e945021-f632-4034-b3a2-e5fa873e7bb2"/>
+				<text><![CDATA[Celular]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="20" uuid="8103d9f9-5f20-4c8a-afc5-1eba9ece86e4"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="100" height="20" uuid="3f6a50db-5e72-46ef-b488-240effa2b0dc"/>
+				<text><![CDATA[Data da Visita (A/M/D)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="-20" y="19" width="844" height="1" uuid="ea8f7314-088f-4e4c-988d-0670c721ea92"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="e72ee265-1957-4e24-bf8a-fac3d6847dac"/>
+				<textFieldExpression><![CDATA[$F{idVisita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="d9f32b39-73fa-42cc-8521-977e3554dec7"/>
+				<textFieldExpression><![CDATA[$F{Nome_Mae}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="5612661f-6d9f-4c62-b6e4-bdabf7f8b111"/>
+				<textFieldExpression><![CDATA[$F{Nome_Pai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="932e9b77-dc8e-4016-a37d-d8b7bab70a1c"/>
+				<textFieldExpression><![CDATA[$F{Nome_Filho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="12040266-9058-4547-9e17-7ab148073023"/>
+				<textFieldExpression><![CDATA[$F{Fone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="5e4ba967-1332-42e1-a5c5-1831ff8b2439"/>
+				<textFieldExpression><![CDATA[$F{Celular}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="20" uuid="851d77d8-ef8c-4e0d-b106-9f3ef50dd02f"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="100" height="20" uuid="8b56310f-a5dd-4b2c-bb72-0018fe48e327"/>
+				<textFieldExpression><![CDATA[$F{Data_Visita}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="762" height="13" backcolor="#E6E6E6" uuid="8aa310a8-6904-4a3e-aae6-01b77d632334"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="762" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="4915572f-e4ec-42b3-a644-9a97ff3f4524"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="2e8a59b7-aaba-4a8b-9697-29126ead6691"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

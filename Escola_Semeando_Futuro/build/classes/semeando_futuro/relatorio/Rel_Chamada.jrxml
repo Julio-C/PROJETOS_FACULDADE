@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Rel_Chamada" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c68a67e9-9565-47e3-8ac1-5cfa9565a422">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="idPresenca" class="java.lang.String"/>
+	<field name="NomeFunc" class="java.lang.String"/>
+	<field name="RA" class="java.lang.String"/>
+	<field name="data_Pres" class="java.lang.String"/>
+	<field name="Aulas" class="java.lang.String"/>
+	<field name="Faltas" class="java.lang.String"/>
+	<group name="Group1"/>
+	<group name="Group2"/>
+	<group name="Group3"/>
+	<group name="Group4"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="a3fc28e2-f9db-4f91-9189-f28cad5bc188"/>
+				<staticText>
+					<reportElement x="20" y="20" width="332" height="43" forecolor="#FFFFFF" uuid="0e3372fd-23f2-425b-a05f-09ac947e59d1"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Semeando o Futuro]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="f9dc7c6d-1610-46a4-88a9-9dadadf849fd"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Rel. de Chamada]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="a0c99133-8cfa-4d3a-8e8b-817632070de1"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="0" width="68" height="20" uuid="7eb5231d-5c57-4451-abd2-cabfb5e13f24"/>
+				<text><![CDATA[idPresenca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="0" width="116" height="20" uuid="1b758b3a-10f9-40e1-a0ce-da0698c3179c"/>
+				<text><![CDATA[Funcionário]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="92" height="20" uuid="7aaf76fa-34d7-495d-9d44-b6ee91ad6f27"/>
+				<text><![CDATA[RA do Aluno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="109" height="20" uuid="ee1db270-a2cd-4373-a4a3-dbae6adc6b31"/>
+				<text><![CDATA[Data (Ano/Mês/Dia)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="0" width="75" height="20" uuid="54fef74c-60d9-4403-882a-0e0b0af1d602"/>
+				<text><![CDATA[Nº de Aula]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="92" height="20" uuid="22f83547-f255-488c-91d6-d1b57bb45a96"/>
+				<text><![CDATA[N° de Falta]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="558e9b27-0e52-47cc-badc-b5ad92a21fca"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="68" height="20" uuid="34e75d6f-f28d-4d33-8c61-19194425723b"/>
+				<textFieldExpression><![CDATA[$F{idPresenca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="0" width="116" height="20" uuid="fdd96477-ff39-4ef3-9acc-0dd1295b9826"/>
+				<textFieldExpression><![CDATA[$F{NomeFunc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="92" height="20" uuid="5c2943ff-800c-4a54-bbbd-f28057dc3187"/>
+				<textFieldExpression><![CDATA[$F{RA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="109" height="20" uuid="30fdd55b-ce63-425f-aa4b-cbc33e0371d1"/>
+				<textFieldExpression><![CDATA[$F{data_Pres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="75" height="20" uuid="9de4c4f4-df38-4f1a-aabb-49f68e7606a8"/>
+				<textFieldExpression><![CDATA[$F{Aulas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="92" height="20" uuid="2e024a5a-f8c9-4baf-a4b0-93fc9d651a00"/>
+				<textFieldExpression><![CDATA[$F{Faltas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="27295332-7608-45c9-af65-cc72346bfd1c"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="1dc8de73-c7a7-4398-8f07-843595e41563"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="87f7f8fe-2c90-452e-96b2-497b4a17390b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

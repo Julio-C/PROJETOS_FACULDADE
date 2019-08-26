@@ -1,0 +1,18 @@
+SMAP
+ListagemPromocao_jsp.java
+JSP
+*S JSP
+*F
++ 0 ListagemPromocao.jsp
+ListagemPromocao.jsp
+*L
+1,5:50
+9,7:54
+15:60,9
+16,39:69
+54,2:108
+56,11:110,3
+67,2:143
+69,2:146
+70,11:148
+*E
